@@ -1,3 +1,11 @@
 export default function Root(props) {
-  return <section>{props.name} is mounted!</section>;
+  return (
+    <section>
+      <ul>
+        <li>Home</li>
+        <li>Itenaries</li>
+        <li>Settings</li>
+      </ul>
+    </section>
+  );
 }
