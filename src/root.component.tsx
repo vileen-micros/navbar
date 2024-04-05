@@ -5,6 +5,7 @@ export default function Root(props) {
         <li>Home</li>
         <li>Itenaries</li>
         <li>Settings</li>
+        <li>About</li>
       </ul>
     </section>
   );
