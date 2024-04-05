@@ -19,11 +19,9 @@ jobs:
           npm run build
 
       - name: Deploy to GitHub Pages
-        run: |
-          git config --global user.email "er.hiteshsoni@gmail.com"
-          git config --global user.name "GitHub Actions"
-          git checkout gh-pages
-          git add .
-          git commit -m "Auto-generated commit"
-          git push origin gh-pages
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+         BRANCH: gh-pages  
+         FOLDER: dist
     
