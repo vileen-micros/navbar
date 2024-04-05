@@ -1,6 +1,7 @@
 export default function Root(props) {
   return (
     <section>
+      <h1>Navbar</h1>
       <ul>
         <li>Home</li>
         <li>Itenaries</li>
